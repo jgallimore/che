@@ -51,9 +51,9 @@ public class ErrorMessageUtils {
      *
      * @param exception
      *         passed exception
-     * @return error message
+     * @return error code
      */
-    public static long getErrorCode(Throwable exception) {
+    public static int getErrorCode(Throwable exception) {
         if (exception instanceof ServerException) {
             return ((ServerException)exception).getErrorCode();
         } else if (exception instanceof org.eclipse.che.ide.websocket.rest.exceptions.ServerException) {

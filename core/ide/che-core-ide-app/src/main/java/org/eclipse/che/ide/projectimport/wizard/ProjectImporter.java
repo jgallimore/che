@@ -100,7 +100,7 @@ public class ProjectImporter extends AbstractImporter {
             @Override
             public void apply(PromiseError exception) throws OperationException {
                 subscriber.onFailure(exception.getMessage());
-                long errorCode = ErrorMessageUtils.getErrorCode(exception.getCause());
+                int errorCode = ErrorMessageUtils.getErrorCode(exception.getCause());
                 if (errorCode == 100500) {
                     callback.onFailure(new Exception(localizationConstant.importProjectMessageUnableGetSshKey()));
                     return;
