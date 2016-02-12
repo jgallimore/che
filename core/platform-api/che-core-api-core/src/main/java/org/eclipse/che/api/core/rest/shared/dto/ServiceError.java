@@ -12,6 +12,8 @@ package org.eclipse.che.api.core.rest.shared.dto;
 
 import org.eclipse.che.dto.shared.DTO;
 
+import java.util.Map;
+
 /**
  * Describes error which may be serialized to JSON format with {@link org.eclipse.che.api.core.rest.ApiExceptionMapper}
  *
@@ -21,6 +23,7 @@ import org.eclipse.che.dto.shared.DTO;
  */
 @DTO
 public interface ServiceError {
+
     /**
      * Get error message.
      *
