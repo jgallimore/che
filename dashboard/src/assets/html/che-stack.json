@@ -381,5 +381,46 @@
       "href": "http://path.com/to-the-icon.svg",
       "produces": "application/svg+xml"
     }
-  }
+  },
+  {
+    "id": "tomee-default",
+    "creator": "tomitribe",
+    "name": "TomEE",
+    "description": "Default Java Stack with JDK 8, Maven and Apache TomEE 1.7.3.",
+    "scope": "general",
+    "tags": [
+      "Ubuntu",
+      "Java",
+      "JDK",
+      "Maven",
+      "TomEE",
+      "Subversion",
+      "Git"
+    ],
+    "components": [
+      {
+        "name": "JDK",
+        "version": "1.8.0_45"
+      },
+      {
+        "name": "Maven",
+        "version": "3.2.2"
+      },
+      {
+        "name": "TomEE",
+        "version": "1.7.3"
+      }
+    ],
+    "source": {
+      "type": "image",
+      "origin": "codenvy/ubuntu_tomee_173_jdk8"
+    },
+    "links": {
+      "method": "GET",
+      "parameters": [],
+      "rel": "icon",
+      "href": "http://path.com/to-the-icon.svg",
+      "produces": "application/svg+xml"
+    }
+  }	
 ]
