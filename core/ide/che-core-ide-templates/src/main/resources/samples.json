@@ -372,7 +372,7 @@
         }
       },
       {
-        "name": "stop tomcat",
+        "name": "stop tomee",
         "type": "custom",
         "commandLine": "$TOMEE_HOME/bin/catalina.sh stop",
         "attributes": {
@@ -382,7 +382,7 @@
       {
         "name": "build and run",
         "type": "mvn",
-        "commandLine": "mvn -f ${current.project.path} clean install && cp ${current.project.path}/target/*.war $TOMEE_HOME/webapps/ROOT.war && $TOMCAT_HOME/bin/catalina.sh run",
+        "commandLine": "mvn -f ${current.project.path} clean install && cp ${current.project.path}/target/*.war $TOMEE_HOME/webapps/ROOT.war && $TOMEE_HOME/bin/catalina.sh run",
         "attributes": {
           "previewUrl": "http://${server.port.8080}"
         }
