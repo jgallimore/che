@@ -358,15 +358,15 @@
       {
         "name": "build",
         "type": "mvn",
-        "commandLine": "mvn -f ${current.project.path} clean install && cp ${current.project.path}/target/*.war $TOMCAT_HOME/webapps/ROOT.war",
+        "commandLine": "mvn -f ${current.project.path} clean install && cp ${current.project.path}/target/*.war $TOMEE_HOME/webapps/ROOT.war",
         "attributes": {
           "previewUrl": ""
         }
       },
       {
-        "name": "run tomcat",
+        "name": "run tomee",
         "type": "custom",
-        "commandLine": "$TOMCAT_HOME/bin/catalina.sh run",
+        "commandLine": "$TOMEE_HOME/bin/catalina.sh run",
         "attributes": {
           "previewUrl": "http://${server.port.8080}"
         }
@@ -374,7 +374,7 @@
       {
         "name": "stop tomcat",
         "type": "custom",
-        "commandLine": "$TOMCAT_HOME/bin/catalina.sh stop",
+        "commandLine": "$TOMEE_HOME/bin/catalina.sh stop",
         "attributes": {
           "previewUrl": ""
         }
@@ -382,7 +382,7 @@
       {
         "name": "build and run",
         "type": "mvn",
-        "commandLine": "mvn -f ${current.project.path} clean install && cp ${current.project.path}/target/*.war $TOMCAT_HOME/webapps/ROOT.war && $TOMCAT_HOME/bin/catalina.sh run",
+        "commandLine": "mvn -f ${current.project.path} clean install && cp ${current.project.path}/target/*.war $TOMEE_HOME/webapps/ROOT.war && $TOMCAT_HOME/bin/catalina.sh run",
         "attributes": {
           "previewUrl": "http://${server.port.8080}"
         }
@@ -390,7 +390,7 @@
       {
         "name": "debug",
         "type": "mvn",
-        "commandLine": "mvn -f ${current.project.path} clean install && cp ${current.project.path}/target/*.war $TOMCAT_HOME/webapps/ROOT.war && $TOMCAT_HOME/bin/catalina.sh jpda run",
+        "commandLine": "mvn -f ${current.project.path} clean install && cp ${current.project.path}/target/*.war $TOMEE_HOME/webapps/ROOT.war && $TOMEE_HOME/bin/catalina.sh jpda run",
         "attributes": {
           "previewUrl": "http://${server.port.8080}"
         }
